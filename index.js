@@ -1,7 +1,7 @@
 alert("Стандартный вид уравнения: \n aх²+bx+c=0");
 var a = parseInt(prompt("Введите a",1));
-var b = parseInt(prompt("Vvedite b", 1));
-var c = parseInt(prompt("Vvedite c", 1));
+var b = parseInt(prompt("Введите b", 1));
+var c = parseInt(prompt("Введите c", 1));
 alert(a+"х²+"+b+"x+"+c+"=0");
 function Mat(a,b,c){
  return b*b - 4*a*c
@@ -27,7 +27,7 @@ return three / four
 }
 var x2 = thr(a,b,c);
 var result;
-if (D < 0){alert("Net kornea")} else {if(D === 0){result = "x="+x;}else {result="x1="+x1+" x2="+x2;}}
+if (D < 0){alert("У данного уравнения нет корней")} else {if(D === 0){result = "x="+x;}else {result="x1="+x1+" x2="+x2;}}
 if (D === 0 || D > 0){alert(result);};
 var resultText = "<h2>"+"Ваш ответ:"+"<br>"+result+"</h2>";
 var example = "<h2>"+"Стандартный вид уравнения:"+"<br>"+"aх²+bx+c=0"+"</h2>";
