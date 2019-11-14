@@ -7,28 +7,22 @@ function Mat(a,b,c){
  return b*b - 4*a*c
 }
 var D = Mat(a,b,c);
-function first(a,b,c){ var one = -b;
-var two = 2*a;
-return one / two 
+function first(a,b,c){
+return (-b) / (2*a) ;
 }
 var x = first(a,b,c);
-function sec(a,b,c){ var one = -b;
-var two = - Math.sqrt(D)
-var three = one + two ;
-var four = 2*a;
-return three / four
+function sec(a,b,c){ 
+return ((-b)-Math.sqrt(D)) / (2*a)
 }
 var x1 = sec(a,b,c);
-function thr(a,b,c){ var one = -b;
-var two = Math.sqrt(D)
-var three = one + two ;
-var four = 2*a;
-return three / four
+function thr(a,b,c){
+return ((-b)+Math.sqrt(D)) / (2*a)
 }
 var x2 = thr(a,b,c);
 var result;
 if (D < 0){alert("У данного уравнения нет корней")} else {if(D === 0){result = "x="+x;}else {result="x1="+x1+" x2="+x2;}}
 if (D === 0 || D > 0){alert(result);};
+if (D < 0){result = "Ваше уравнение не имеет решений"};
 var resultText = "<h2>"+"Ваш ответ:"+"<br>"+result+"</h2>";
 var example = "<h2>"+"Стандартный вид уравнения:"+"<br>"+"aх²+bx+c=0"+"</h2>";
 var yourExample ="<h2>"+"Ваше уравнение:"+"<br>"+a+"х²+"+b+"x+"+c+"=0"+"</h2>";
